@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cn.ksmcbrigade.timeup.mixin",
+  "refmap": "${mod_id}.refmap.json",
+  "compatibilityLevel": "JAVA_18",
+  "mixins": [
+    "common.LevelMixin",
+    "common.TickRateManagerMixin",
+    "common.entity.EntityMixin",
+    "common.entity.LivingEntityMixin",
+    "network.ConnectionMixin"
+  ],
+  "client": [
+    "client.DeltaTrackerMixin",
+    "client.UniformMixin",
+    "client.particle.ParticleEngineMixin",
+    "client.particle.ParticleMixin",
+    "client.sound.SoundEngineMixin",
+    "network.ChatMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

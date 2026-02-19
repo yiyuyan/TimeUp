@@ -1,0 +1,17 @@
+/enchant @s minecraft:sharpness 5
+/time set midnight
+/time-up
+/summon minecraft:tnt
+/time-up
+/summon minecraft:tnt
+/give @s tnt
+/give @s minecraft:flint_and_steel
+/time-up
+/summon minecraft:villager
+/time-up
+/kill @e[type=!minecraft:player]
+/time-up
+/summon minecraft:zombie_horse
+/time-up
+/playsound minecraft:ambient.cave
+/time-up
