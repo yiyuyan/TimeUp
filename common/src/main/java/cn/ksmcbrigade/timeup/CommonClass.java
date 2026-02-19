@@ -1,6 +1,7 @@
 package cn.ksmcbrigade.timeup;
 
 import cn.ksmcbrigade.timeup.platform.Services;
+import cn.ksmcbrigade.timeup.records.CameraRecord;
 
 // This class is part of the common project meaning it is shared between all supported loaders. Code written here can only
 // import and access the vanilla codebase, libraries used by vanilla, and optionally third party libraries that provide
@@ -9,6 +10,7 @@ import cn.ksmcbrigade.timeup.platform.Services;
 public class CommonClass {
 
     public static boolean timing = false;
+    public static CameraRecord cameraRecord;
 
     // The loader specific projects are able to import and use any code from the common project. This allows you to
     // write the majority of your code here and load it from your loader specific projects. This example has some

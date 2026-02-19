@@ -15,3 +15,16 @@
 /time-up
 /playsound minecraft:ambient.cave
 /time-up
+/summon minecraft:wither
+/time-up
+/time set day
+/time-up
+/kill @e
+/time-up
+/particle minecraft:ash ~ ~ ~ ~ ~ ~ 0.001 114514 normal
+/time-up
+/particle minecraft:ash ~ ~ ~ ~ ~ ~ 1 114514 normal
+/particle minecraft:enchant ~ ~ ~ ~10 ~10 ~10 1 114514 normal
+/particle minecraft:enchant ~ ~ ~ ~10 ~10 ~10 0.01 114514 normal
+/particle minecraft:end_rod ~ ~ ~ ~10 ~10 ~10 0.01 114514 normal
+/time-up

@@ -12,8 +12,10 @@
     "network.ConnectionMixin"
   ],
   "client": [
+    "client.CameraMixin",
     "client.DeltaTrackerMixin",
     "client.UniformMixin",
+    "client.accessors.CameraAccessor",
     "client.particle.ParticleEngineMixin",
     "client.particle.ParticleMixin",
     "client.sound.SoundEngineMixin",
