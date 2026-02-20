@@ -12,7 +12,7 @@ public class ServerLevelMixin {
     @Inject(
             method = {
                     "tickCustomSpawners","tickPrecipitation",
-                    "tickPassenger","tickTime", "tickChunk",
+                    "tickTime", "tickChunk",
                     "tickBlock","tickFluid"
             },
             at = @At("HEAD"),cancellable = true)

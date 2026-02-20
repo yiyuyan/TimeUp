@@ -12,7 +12,7 @@ public class ClientLevelMixin {
     @Inject(
             method = {
                     "animateTick","doAnimateTick",
-                    "tickPassenger","tickTime", "tickEntities"
+                    "tickTime"
             },
             at = @At("HEAD"),cancellable = true)
     public void tick(CallbackInfo ci){
