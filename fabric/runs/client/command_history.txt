@@ -1,6 +1,3 @@
-/enchant @s minecraft:sharpness 5
-/time set midnight
-/time-up
 /summon minecraft:tnt
 /time-up
 /summon minecraft:tnt
@@ -27,4 +24,27 @@
 /particle minecraft:enchant ~ ~ ~ ~10 ~10 ~10 1 114514 normal
 /particle minecraft:enchant ~ ~ ~ ~10 ~10 ~10 0.01 114514 normal
 /particle minecraft:end_rod ~ ~ ~ ~10 ~10 ~10 0.01 114514 normal
+/time-up
+/enchant @s minecraft:sharpness
+/enchant @s minecraft:aqua_affinity 5
+/enchant @s minecraft:aqua_affinity
+/effect give @s minecraft:absorption 1145 2
+/time-up
+/effect give @s minecraft:absorption 1145 2
+/time-up
+/enchant @s minecraft:sharpness
+/time-up
+/summon minecraft:wither
+/time-up
+/kill @e[type=!minecraft:player]
+/time-up
+/give @s minecraft:flint_and_steel
+/time-up
+/time set day
+/time-up
+/summon minecraft:tnt
+/enchant Player545 minecraft:aqua_affinity
+/enchant Player545 minecraft:channeling
+/time-up
+/time set day
 /time-up

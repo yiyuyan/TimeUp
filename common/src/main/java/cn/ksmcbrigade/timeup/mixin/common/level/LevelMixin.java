@@ -1,4 +1,4 @@
-package cn.ksmcbrigade.timeup.mixin.common;
+package cn.ksmcbrigade.timeup.mixin.common.level;
 
 import cn.ksmcbrigade.timeup.CommonClass;
 import com.google.common.collect.Iterables;
