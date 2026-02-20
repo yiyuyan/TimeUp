@@ -17,6 +17,11 @@ public class TickRateManagerMixin {
         if(CommonClass.timing && !(pEntity instanceof Player)) cir.setReturnValue(true);
     }
 
+    @Inject(method = "runsNormally",at = @At("HEAD"),cancellable = true)
+    public void nonNormally(CallbackInfoReturnable<Boolean> cir){
+        if(CommonClass.timing) cir.setReturnValue(false);
+    }
+
     @Inject(method = "isSteppingForward",at = @At("HEAD"),cancellable = true)
     public void frozen(CallbackInfoReturnable<Boolean> cir){
         if(CommonClass.timing) cir.setReturnValue(false);

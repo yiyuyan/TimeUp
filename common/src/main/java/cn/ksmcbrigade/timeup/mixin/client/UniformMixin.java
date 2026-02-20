@@ -19,10 +19,23 @@ public abstract class UniformMixin {
 
     @Inject(method = {
             "set(F)V",
+            "set(FF)V",
+            "set(FFF)V",
+            "set(FFFF)V",
             "set([F)V",
+            "set(I)V",
+            "set(II)V",
+            "set(III)V",
+            "set(IIII)V",
+            "set(Lorg/joml/Vector4f;)V",
+            "set(Lorg/joml/Vector3f;)V",
+            "set(Lorg/joml/Matrix3f;)V"
     },at = @At("HEAD"),cancellable = true)
     private void set(CallbackInfo ci){
-        if(CommonClass.timing && set){
+        if(CommonClass.timing && set &&
+                (getName().toLowerCase().contains("time")
+                    || getName().toLowerCase().contains("pos"))
+        ){
             ci.cancel();
         }
         set = true;

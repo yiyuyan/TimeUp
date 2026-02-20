@@ -1,10 +1,3 @@
-/summon minecraft:tnt
-/time-up
-/summon minecraft:tnt
-/give @s tnt
-/give @s minecraft:flint_and_steel
-/time-up
-/summon minecraft:villager
 /time-up
 /kill @e[type=!minecraft:player]
 /time-up
@@ -48,3 +41,10 @@
 /time-up
 /time set day
 /time-up
+/time set midnight
+/time-up
+/time set midnight
+/time-up
+/time set day
+/time-up
+/time set midnight
