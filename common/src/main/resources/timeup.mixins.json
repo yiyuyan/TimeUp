@@ -13,6 +13,7 @@
     "common.effect.MobEffectInstanceMixin",
     "common.entity.EntityMixin",
     "common.entity.LivingEntityMixin",
+    "common.fix.EntityMixin",
     "common.fluid.FluidMixin",
     "common.fluid.FluidStateMixin",
     "common.level.LevelMixin",
