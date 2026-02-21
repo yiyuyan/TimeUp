@@ -1,0 +1,21 @@
+package cn.ksmcbrigade.timeup.mixin.client.item;
+
+import cn.ksmcbrigade.timeup.CommonClass;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.renderer.block.model.ItemOverrides;
+import net.minecraft.client.resources.model.BakedModel;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ItemStack;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+@Mixin(ItemOverrides.class)
+public class ItemOverridesMixin {
+
+    @Inject(method = "resolve",at = @At("HEAD"),cancellable = true)
+    public void resolve(BakedModel pModel, ItemStack pStack, ClientLevel pLevel, LivingEntity pEntity, int pSeed, CallbackInfoReturnable<BakedModel> cir){
+        if(CommonClass.timing) cir.setReturnValue(pModel);
+    }
+}

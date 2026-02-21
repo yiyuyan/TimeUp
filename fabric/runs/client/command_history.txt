@@ -1,20 +1,3 @@
-/particle minecraft:end_rod ~ ~ ~ ~10 ~10 ~10 0.01 114514 normal
-/time-up
-/enchant @s minecraft:sharpness
-/enchant @s minecraft:aqua_affinity 5
-/enchant @s minecraft:aqua_affinity
-/effect give @s minecraft:absorption 1145 2
-/time-up
-/effect give @s minecraft:absorption 1145 2
-/time-up
-/enchant @s minecraft:sharpness
-/time-up
-/summon minecraft:wither
-/time-up
-/kill @e[type=!minecraft:player]
-/time-up
-/give @s minecraft:flint_and_steel
-/time-up
 /time set day
 /time-up
 /summon minecraft:tnt
@@ -47,4 +30,21 @@
 /time-up
 /give @s minecraft:fire_charge
 /give @s minecraft:fire_coral
+/time-up
+/time set day
+/time-up
+/give @s minecraft:obsidian
+/time-up
+/time set midnight
+/time-up
+/weather rain 1000
+/time-up
+/time set day
+/time-up
+/summon minecraft:lightning_bolt
+/time-up
+/summon minecraft:lightning_bolt
+/time-up
+/give @s minecraft:netherite_sword
+/enchant @s minecraft:sharpness 5
 /time-up
