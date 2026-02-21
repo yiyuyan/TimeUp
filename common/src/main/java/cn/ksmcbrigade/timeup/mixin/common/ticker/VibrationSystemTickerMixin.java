@@ -1,5 +1,6 @@
 package cn.ksmcbrigade.timeup.mixin.common.ticker;
 
+import cn.ksmcbrigade.timeup.CommonClass;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gameevent.vibrations.VibrationInfo;
@@ -26,11 +27,12 @@ public interface VibrationSystemTickerMixin {
     }
 
     /**
-     * @author
-     * @reason
+     * @author KSmc_brigade
+     * @reason add codes ahead through overwriting
      */
     @Overwrite
     static void tick(Level pLevel, VibrationSystem.Data pData, VibrationSystem.User pUser) {
+        if(CommonClass.timing) return;
         if (pLevel instanceof ServerLevel serverlevel) {
             if (pData.getCurrentVibration() == null) {
                 trySelectAndScheduleVibration(serverlevel, pData, pUser);
