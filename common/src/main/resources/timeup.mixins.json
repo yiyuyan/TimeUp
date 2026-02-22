@@ -5,6 +5,11 @@
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_18",
   "mixins": [
+    "client.iris.FrameUpdaterMixin",
+    "client.iris.IrisTimeUniformsMixin",
+    "client.iris.ProgramUniformsMixin",
+    "client.iris.SystemTimeUniformsMixin",
+    "client.iris.WorldTimeUniformsMixin",
     "client.renderer.DisplayMixin",
     "common.TickRateManagerMixin",
     "common.block.BlockBehaviourMixin",

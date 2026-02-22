@@ -15,12 +15,24 @@ neoForge {
         mappingsVersion = parchment_version
     }
 }
-
+repositories {
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
+    maven {
+        name = 'Sponge'
+        url = "https://repo.spongepowered.org/repository/maven-public"
+    }
+}
 dependencies {
     compileOnly group: 'org.spongepowered', name: 'mixin', version: '0.8.5'
     // fabric and neoforge both bundle mixinextras, so it is safe to use it in common
     compileOnly group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
     annotationProcessor group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
+
+    implementation "maven.modrinth:sodium:$sodium_neoforge"
+    implementation "maven.modrinth:iris:$iris_neoforge"
 }
 
 configurations {

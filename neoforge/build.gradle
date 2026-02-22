@@ -37,3 +37,15 @@ neoForge {
 }
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+repositories {
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
+}
+
+dependencies {
+    implementation "maven.modrinth:sodium:$sodium_neoforge"
+    implementation "maven.modrinth:iris:$iris_neoforge"
+}

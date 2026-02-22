@@ -2,6 +2,12 @@ plugins {
     id 'multiloader-loader'
     id 'fabric-loom'
 }
+repositories {
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
+}
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
     mappings loom.layered {
@@ -10,6 +16,14 @@ dependencies {
     }
     modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+
+    // Source: https://mvnrepository.com/artifact/net.fabricmc.fabric-api/fabric-renderer-api-v1
+    modApi("net.fabricmc.fabric-api:fabric-renderer-api-v1:3.4.0+c705a49c19")
+    modImplementation("org.antlr:antlr4-runtime:4.13.1")
+    modImplementation("io.github.douira:glsl-transformer:2.0.1")
+    modImplementation("org.anarres:jcpp:1.4.14")
+    modImplementation "maven.modrinth:sodium:$sodium_fabric"
+    modImplementation "maven.modrinth:iris:$iris_fabric"
 }
 
 loom {

@@ -1,24 +1,6 @@
 /time-up
 /time set midnight
 /time-up
-/time set day
-/time-up
-/time set midnight
-/time-up
-/give @s minecraft:horse_spawn_egg
-/time-up
-/kill @e[type=!minecraft:player]
-/time-up
-/time set day
-/time-up
-/time set night
-/time-up
-/time set night
-/time-up
-/time set day
-/time-up
-/time set midnight
-/time-up
 /give @s minecraft:fire_charge
 /give @s minecraft:fire_coral
 /time-up
@@ -47,4 +29,22 @@
 /time-up
 /give @s minecraft:obsidian
 /give @s minecraft:flint_and_steel
+/time-up
+/time set midnight
+/time-up
+/time set day
+/time
+/time query daytime
+/time add 1
+/time add 1s
+/time add 1d
+/time add 10d
+/time add 10000d
+/time add 1145d
+/time set midnight
+/time add 1145d
+/time-up
+/time set day
+/time-up
+/time set midnight
 /time-up
