@@ -1,4 +1,4 @@
-package cn.ksmcbrigade.timeup.mixin.client.iris;
+package cn.ksmcbrigade.timeup.mixin.client.iris.time;
 
 import cn.ksmcbrigade.timeup.CommonClass;
 import net.irisshaders.iris.uniforms.IrisTimeUniforms;

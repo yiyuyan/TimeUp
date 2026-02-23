@@ -12,5 +12,6 @@ public class FrameUpdaterMixin {
     @Inject(method = "onNewFrame",at = @At("HEAD"),cancellable = true)
     public void no_u(CallbackInfo ci){
         if(CommonClass.timing) ci.cancel();
+
     }
 }
